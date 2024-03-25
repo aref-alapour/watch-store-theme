@@ -1,0 +1,47 @@
+.blog-cart {
+    max-width: 250px;
+    margin: 0 auto;
+    & .card {
+        border-radius: 20px;
+        & img {
+            border-radius: 20px 20px 0 0;
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+        }
+        & .card-body {
+            position: relative;
+
+            & h5 {
+                color: $color-tertiary-3;
+                font-size: smaller;
+                white-space: nowrap;
+                overflow: hidden;
+                padding: 0 10px;
+                text-overflow: ellipsis;
+            }
+
+            & p {
+                font-size: smaller;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                overflow: hidden;
+                color: $color-text-1;
+            }
+            & .btn-blog-card {
+                position: relative;
+                width: 100%;
+                & a {
+                    background-color: $color-tertiary-1;
+                    padding: 20px 25px;
+                    color: $color-white;
+                    width: fit-content;
+                    display: block;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
